@@ -1,0 +1,6 @@
+#!/bin/bash
+chmod a+x * /home/*
+mv /home/pxe-agent /usr/local/bin/
+mv /home/pxe-agent.service /etc/systemd/system
+systemctl enable pxe-agent.service 
+systemctl start pxe-agent.service

@@ -1,0 +1,10 @@
+[Unit]
+Description= Uni pxe Agent Daemon
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/pxe-agent
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
